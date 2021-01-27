@@ -1,23 +1,59 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you: 
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
 # Site settings
-title: Your Title Here
-description: > # this means to ignore newlines until "baseurl:"
-baseurl: "/creative-theme-jekyll-new/" # the subpath of your site, e.g. /blog/
-url: "" # the base hostname & protocol for your site
-author: Copyright &copy; 2019 - Start Bootstrap
-lang: en_US
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: WebARM LLC
+email: your-email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  WebARM is a one-stop shop for all of your Marketing Agency needs.
+  Based in the Ottawa, IL area, we are here to help you reach the customers your business needs to succeed.
+  We’ve spent the time figuring out what works and what doesn’t, so you don’t have to.
+  The wisdom and invaluable experience we’ve gained allows us to build better long-term creative strategies for all of our clients.
+  From small to medium to large businesses, we have the experience to help them all!
+  
+  
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: jekyllrb
+github_username:  jekyll
 
 # Build settings
-safe: true # always trues on github-pages, disables _plugins/
-markdown: kramdown
-sass:
-  indentWidth: 4
-  style: compressed
-  precision: 10
+theme: minima
 plugins:
-  - jekyll-sitemap
-  - jekyll-seo-tag
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - build-in-docker.sh
-  - README.md
+  - jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
